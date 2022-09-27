@@ -1,0 +1,67 @@
+header {
+    width: 100%;
+    position: fixed;
+    padding-top: 1rem;
+    background-color: #A4031F;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    margin: 1rem;
+}
+
+header nav {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 8rem;
+    text-align: center;
+    
+}
+
+img {
+    width: 50vh;
+}
+
+body {
+    background-color: #240B36;
+    color: white;
+}
+
+
+.container_museos {
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+#Agenda {
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    display: inline-block;
+}
+
+table tr td {
+    border: 0.7rem solid #F2DC5D;
+    width: 5rem;
+    background-color: ;
+}
+
+#Noticias {
+    width: 80%;
+    display: flex;
+    align-items: center;   
+}
