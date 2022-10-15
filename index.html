@@ -26,8 +26,10 @@
 
         <div class="container_header">
             <div class="container_header_txt">
+                <a href="#Formulario">
                 <p>Estés donde estés</p>
                 <h2>Reservá <br> tu visita guiada <br> a Museos</h2>
+                </a>
             </div>
         </div>
     </header>
@@ -119,16 +121,33 @@
 
 <section id="Formulario">
     <div class="container">
-            <h4>Formulario</h4>
-            
-            <form action="mailto:mail@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="nombre" size="30" maxlength="100" value="Nombre"> <br><br>
-                <input type="text" name="nombre" size="30" maxlength="100" value="Apellido"> <br><br>
-                <input type="email" name="email" value="Email" id=""> <br><br>
-                <input type="submit" value="Enviar" id="form_btn">
-            </form>
-        </div>
-    </section>
+        <h4>Reserva tu entrada</h4>
+        
+        <form action="ingresodatos.html" method="get" enctype="text/plain">
+            <div class="reservas">
+              <input type="radio" id="rmuseo1" name="museo" value="Museo 1">
+                 <label for="rmuseo1">MUSEO 1</label><br>
+              <input type="radio" id="rmuseo2" name="museo" value="Museo 2">
+                 <label for="museo2">MUSEO 2</label><br><br>
+              </div>
+            <div class="seleccion 1">
+                <label for="fecha">Fecha:</label>
+              <input type="date" name="fecha" id="fecha" required size="30" maxlength="100"value=""> <br><br>
+            </div>
+                 <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" required size="30" maxlength="100" id="nombre" value=""> <br><br>
+                 <label for="apellido">Apellido:</label>
+              <input type="text" name="apellido" required size="30" maxlength="100" id="apellido" value=""> <br><br>
+                 <label for="email">Email:</label>
+              <input type="email" name="email" required value="" id="email"> <br><br>
+              <input type="submit" value="Enviar" id="form_btn"  onclick="inicio()"class="form_button" > 
+              <input type="reset" id="form_btnreset" class="form_button">
+        
+           </form>
+    </div>
+</section>
+
+<script src="app.js"></script>
         
     <section id="Noticias">
         <div class="container">
@@ -174,9 +193,9 @@
             <p>+54 9 4633-6999</p>
         <div>
             <h3>Seguinos</h3>
-            <a href="www.facebook.com"><img src="./img/facebook.png" alt="boton facebook" class="redes"></a>
+            <a href="https://www.facebook.com"><img src="./img/facebook.png" alt="boton facebook" class="redes"></a>
             
-            <a href="www.instagram.com"><img src="./img/instagram.png" alt="boton instagram" class="redes"></a>
+            <a href="https://www.instagram.com"><img src="./img/instagram.png" alt="boton instagram" class="redes"></a>
             <p>Derechos Reservados</p>
         </div>   
         </div>
