@@ -36,6 +36,12 @@ nav {
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding: 0 3rem; 
 }
 
 
@@ -248,7 +254,9 @@ form input {
 }
 
 #Opiniones {
-    padding: 1rem 0rem;
+    padding: 2rem 4rem;
+    display: flex;
+
 }
 
 .Opiniones_grid {
@@ -282,4 +290,13 @@ form input {
 
 .container h3 {
     padding-top: 1rem;
+}
+
+.container_contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.container_contacto p {
+        padding: 2rem 5rem;
 }
