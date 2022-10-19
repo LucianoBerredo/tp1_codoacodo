@@ -30,6 +30,15 @@ p {font-size: 1em;}
     padding: 1.3rem 1.3rem;
 }
 
+nav {
+    text-align: center;
+    background-color: rgb(181, 181, 181);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
 header .container {
     text-align: center;
     background-color: rgb(181, 181, 181);
@@ -38,7 +47,7 @@ header .container {
     padding-bottom: 20px;
 }
 
-header .container_header {
+.container_header {
     height: 100vh;
     width: auto;
     text-align: center;
@@ -51,8 +60,8 @@ header .container_header {
 }
 
 header .container_header_txt {
-    background-color: white;
-    opacity: 70%;   
+    background-color: aqua;
+    opacity: 70%;
 }
 
 .container_header_txt a:link {
@@ -68,13 +77,74 @@ header .container_header_txt {
     color: brown;
 }
 
-header nav a {
+
+@media (max-width: 425px) {
+    nav {
+        position:fixed;
+        background: rgba(0,0,0,0.8);
+        top: 0;
+        bottom: 0;
+        left: -100vw;
+        width: 100vw;
+        z-index: 1;
+        transition: 0.5s;
+    }
+    nav ul {
+        padding: 0;
+        width: 80%;
+        margin: 6rem auto;
+    }
+    
+    nav ul a {
+        display: block;
+        padding: 1.75rem 1rem;
+        background-color: brown;
+    }
+
+    header .container {
+        display: flex;
+    }
+    
+    #abrir_menu, #cerrar_menu {
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: url(./img/menu\ abrir.png);
+        background-size: contain;
+    }
+    
+    #cerrar_menu {
+        background-image: url(./img/menu\ cerrar.png);
+        display: none;
+    }
+    
+    header h1 {
+        flex: 1;
+    }
+    
+    body:target nav {
+        left: 0;
+    }
+
+    body:target #abrir_menu {
+        display: none;
+    }
+
+    body:target #cerrar_menu {
+        display: block;
+    }
+}
+
+
+
+nav ul a {
     color: white;
     text-decoration: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
 }
 
- header nav a:hover {
+nav ul a:hover {
     color: rgb(186, 36, 36);
 }
 
