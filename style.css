@@ -253,12 +253,6 @@ form input {
     
 }
 
-#Opiniones {
-    padding: 2rem 4rem;
-    display: flex;
-
-}
-
 .Opiniones_grid {
     padding: 1rem 1rem;
     display: grid;
@@ -292,11 +286,20 @@ form input {
     padding-top: 1rem;
 }
 
-.container_contacto {
-    display: flex;
-    justify-content: center;
-}
-
-.container_contacto p {
-        padding: 2rem 5rem;
+@media (min-width: 426px) {
+    
+    #Opiniones {
+        display: flex;
+        padding: 3rem;
+    }
+        
+    .container_contacto {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container_contacto p {
+        padding: 0rem 1rem;
+    }
+    
 }
