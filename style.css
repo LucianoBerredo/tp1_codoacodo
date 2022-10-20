@@ -85,6 +85,20 @@ header .container_header_txt {
 
 
 @media (max-width: 425px) {
+    
+    header .container {
+        background-color: brown;
+    }
+
+    .container_header_txt {
+        background-color: white;
+        opacity: 65%;
+    }
+    
+    .container_header_txt p {
+        color: black;
+    }
+
     nav {
         position:fixed;
         background: rgba(0,0,0,0.8);
@@ -139,6 +153,105 @@ header .container_header_txt {
     body:target #cerrar_menu {
         display: block;
     }
+
+    #Agenda {
+        display: none;
+    }
+
+    .AgendaResponsive {
+        padding: 0.5rem 0rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    .AgendaContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .AgendaCaja {
+        width: 7rem;
+        height: 6.8rem;
+        margin: 0.5rem .5rem;
+        border: 0.2rem solid rgb(193, 42, 42);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .AgendaDia {
+        background-color: rgb(193, 42, 42);
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+        border: 0.3rem solid  rgb(255, 255, 255);
+    }
+
+    .AgendaEvento {
+        color: black;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .reservas {
+        width: 15rem;
+        display: flex;
+        padding: 0.5rem;
+    }
+
+    form .form_button {
+        margin-top: 0.5rem;
+    }
+
+    #Noticias {
+        padding: 0rem 2rem;
+        
+    }
+
+    .Noticia_img {
+        display: flex;
+        background-image: url(./img/noticia1.jpeg);
+        height: 50vh;
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0.8rem;
+    }
+    div h2 {
+        padding-top: 0.5rem;
+    }
+
+    #Opiniones div {
+        padding: 0.5rem 3rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    #Contacto, #Contacto h3, footer, footer {
+        padding: 0;
+    }
+
+    #Contacto h3 {
+        padding-bottom: 0.5rem;
+    }
+
+    #Contacto div h3 {
+        padding-bottom: 0rem;
+    }
+
+    .redes {
+        margin: 0rem;
+    }
 }
 
 
@@ -170,7 +283,7 @@ footer {
 .museo1 {
     height: 100vh;
     width: auto;
-    background-image: url(./img/aaa.jpg);
+    background-image: url(./img/Louvre.jpg);
     background-position: center;
     background-size: cover;
 }
