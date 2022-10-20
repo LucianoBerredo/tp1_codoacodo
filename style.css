@@ -11,6 +11,8 @@ html {
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri' , 'Trebuchet MS', 'sans-serif';
     text-align: center;
+    background-color: black;
+    color: white;
 }
 
 p {
@@ -32,7 +34,7 @@ p {font-size: 1em;}
 
 nav {
     text-align: center;
-    background-color: rgb(181, 181, 181);
+    background-color: black;
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -47,7 +49,7 @@ nav a {
 
 header .container {
     text-align: center;
-    background-color: rgb(181, 181, 181);
+    background-color: black;
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -65,8 +67,8 @@ header .container {
     background-size: cover;
 }
 
-header .container_header_txt {
-    background-color: aqua;
+.container_header_txt {
+    background-color: rgb(255, 255, 255);
     opacity: 70%;
 }
 
@@ -76,11 +78,44 @@ header .container_header_txt {
 
 .container_header_txt p {
     font-size: 1.4rem;
+    color: black;
 }
 
 .container_header_txt h2 {
     font-size: 2.6rem;
     color: brown;
+}
+
+#Agenda .container_grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.AgendaResponsive, .AgendaContainer {
+    display: none;
+}
+
+.Noticia_img {
+    display: flex;
+    background-image: url(./img/noticia1.jpeg);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8rem;
+}
+div h2 {
+    padding-top: 0.5rem;
+}
+
+#Opiniones div {
+    padding: 0rem 5rem;
 }
 
 
@@ -254,6 +289,11 @@ header .container_header_txt {
     }
 }
 
+@media (min-width: 426px) and (max-width: 1023px) {
+    * { background-color: aqua;
+    }
+} 
+
 
 
 nav ul a {
@@ -264,8 +304,10 @@ nav ul a {
 }
 
 nav ul a:hover {
-    color: rgb(186, 36, 36);
+    color: white;
+    box-shadow: 5px 5px 10px; 
 }
+
 
 footer {
     text-align: center;
