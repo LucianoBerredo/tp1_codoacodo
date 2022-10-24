@@ -358,10 +358,6 @@ footer {
     padding: 10px;
 }
 
-.container_grid {
-
-}
-
 /*agregue el overflow para q scrolee la agenda*/
 #Agenda {
     overflow-x: auto;
@@ -441,10 +437,6 @@ form input {
     width: 6rem;
     border-radius: 60%;
     padding: 0.8rem 0rem;
-}
-
-#Contacto {
-
 }
 
 .redes {
