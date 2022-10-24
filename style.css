@@ -40,6 +40,10 @@ nav {
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
 }
 
 nav a {
@@ -53,7 +57,21 @@ header .container {
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
 }
+
+header {
+    width: 100%;
+    position:fixed;
+}
+
+@keyframes animacion {
+    from {background-color: black;}
+    to {background-color: brown;}
+  }
 
 .container_header {
     height: 100vh;
@@ -290,10 +308,8 @@ div h2 {
 }
 
 @media (min-width: 426px) and (max-width: 1023px) {
-    * { background-color: aqua;
-    }
+    
 } 
-
 
 
 nav ul a {
